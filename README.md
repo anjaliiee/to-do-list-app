@@ -5,8 +5,8 @@ A to-do app in HTML/CSS/JS allows users to add, view, and manage tasks with ease
 ## Description
 
 This is a simple to-do application built with HTML, CSS, and JavaScript. It allows users to add tasks, view them in a list, and mark them as done by clicking on them.
-![image](https://github.com/anjaliiee/to-do-list-app/assets/146212588/486acc32-d08b-41dd-b245-700e13e4ac16)
-![image](https://github.com/anjaliiee/to-do-list-app/assets/146212588/1fdc7710-d58a-4298-94ac-62e01a94126f)
+![image](https://github.com/anjaliiee/to-do-list-app/assets/146212588/25fc82db-b63d-44a8-b05e-9928ab69f0c3)
+
 
 
 
