@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="box1">
+      <div class="title">TO-DO!</div>
+    </main>
+    <main class="box2">
+      <div class="container">
+        <div class="inner">
+          <div>
+            <input
+              class="input"
+              type="text"
+              id="taskInput"
+              placeholder="Enter a new task"
+            />
+            <div class="mid">
+              <div>
+                <button class="add button-86" onclick="addTask()">add</button>
+              </div>
+              <div>
+                <button class="add button-86" onclick="deleteTask()">
+                  delete
+                </button>
+              </div>
+            </div>
+            <div class="list" id="taskList"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // array for tasks
+      let tasks = [];
+
+      // add task fxn
+      function addTask() {
+        const taskInput = document.getElementById("taskInput");
+        const task = taskInput.value.trim();
+        if (task) {
+          tasks.push(task);
+          taskInput.value = ""; // Clear input
+          displayTasks();
+        }
+      }
+
+      // delete fxn
+      function deleteTask() {
+        tasks.pop();
+        displayTasks();
+      }
+
+      function displayTasks() {
+        const taskList = document.getElementById("taskList");
+        taskList.innerHTML = ""; // Clear task list
+        taskList.classList.add("display--list");
+        tasks.forEach((task, index) => {
+          const taskItem = document.createElement("div");
+          taskItem.textContent = task;
+          taskItem.classList.add("task-item");
+          // Add click event listener to toggle "done" class
+          taskItem.addEventListener("click", function () {
+            this.classList.toggle("done");
+          });
+          taskList.appendChild(taskItem);
+        });
+      }
+    </script>
+  </body>
+</html>
