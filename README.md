@@ -14,12 +14,12 @@ This is a simple to-do application built with HTML, CSS, and JavaScript. It allo
 
 To use this app, simply clone the repository or download the files to your local machine.
 
-```bash
-git clone https://github.com/anjaliiee/to-do-list-app.git
+
+```bash git clone https://github.com/anjaliiee/to-do-list-app.git ```
 
 Open the index.html file in a web browser to start using the app.
 
-Usage
+##Usage
 To add a task, type in the input field and click the ‘add’ button.
 Your tasks will appear in a list below.
 Click on a task to mark it as done.
@@ -30,4 +30,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 License
 MIT
 `https://github.com/anjaliiee/to-do-list-app.git`
-```
+
